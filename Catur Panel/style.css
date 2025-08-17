@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    border: 2px solid #333;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.white {
+    background-color: #f0d9b5;
+}
+
+.black {
+    background-color: #b58863;
+}
+
+.selected {
+    background-color: #c0c0ff;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Styling untuk panel owner */
+.owner-panel {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #e8e8e8;
+    text-align: center;
+}
+
+.owner-panel h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.owner-panel button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+#reset-btn {
+    background-color: #dc3545; /* Merah */
+}
+
+#reset-btn:hover {
+    background-color: #c82333;
+}
+
+#toggle-turn-btn {
+    background-color: #007bff; /* Biru */
+}
+
+#toggle-turn-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styling untuk panel musik */
+.music-panel {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.music-panel h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.music-panel button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745; /* Hijau */
+}
+
+.music-panel button:hover {
+    background-color: #218838;
+}
